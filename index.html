@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <!-- default css link -->
+    <link rel="stylesheet" href="./Css/Style.css" />
+    <!-- icons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Option 1: Include in HTML -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="homepage">
+      <div class="px-3 navbarbg">
+        <nav class="navbar navbar-expand-lg navbar-light px-lg-5">
+          <div class="col-md-8 col-lg-3 gap-4 pt-3 d-none d-md-flex">
+            <div class="lostpets d-flex gap-1">
+              <i class="fa-sharp fa-regular fa-compass me-1"></i>
+              <p class="primarytext">I’ve Lost Pets</p>
+            </div>
+            <div class="Foundpets d-flex gap-1">
+              <i class="bi bi-search primarytext"></i>
+              <p class="primarytext">I’ve Found Pets</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-2 col-lg-3 d-flex justify-content-center">
+            <p class="logotext d-flex mb-0">
+              L
+              <img
+                src="./Images/Logo.png"
+                alt="Logo"
+                class="logo mt-1 mx-1  d-lg-block"
+              />GO
+            </p>
+          </div>
+
+          <button
+            class="navbar-toggler col-2 col-md-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+          <i class="fa-sharp fa-solid fa-bars"></i>
+          </button>
+          <div
+            class="collapse navbar-collapse d-lg-flex justify-content-lg-end align-items-center"
+            id="navbarNavDropdown col-lg-6"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link p-3" aria-current="page" href="#">Breeds</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-3" href="#">Search Pets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-3" href="login.html">Login</a>
+              </li>
+              <li class="nav-item mt-2">
+                <button href="signup.html" class="btn loginbtn ms-lg-0">
+                  Sign up
+                </button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <hr class="hrline d-block d-md-none"/>
+        <div class="col-12 gap-4 pt-3 d-flex d-md-none">
+            <div class="lostpets d-flex gap-1">
+              <i class="fa-sharp fa-regular fa-compass"></i>
+              <p class="primarytext">I’ve Lost Pets</p>
+            </div>
+            <div class="Foundpets d-flex gap-1">
+              <i class="bi bi-search primarytext"></i>
+              <p class="primarytext">I’ve Found Pets</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="landingsect smalllandingsect p-md-3 p-0">
+        <div class="">
+            <div class="bgimg d-none d-md-block"> <div class="overlay"></div>
+            <div class="py-lg-5">
+            <div class="landingpagetext d-md-flex flex-column justify-content-center align-items-center py-5 mt-lg-5">
+                <h3 class="Mainheading col-md-10 text-center">Welcome to</h3>
+                <h2 class="Subheading col-md-12 text-center">THE FUTURE OF ADOPTION</h2>
+                <p class="landingtext col-md-8">
+                  Our platform is designed to make the process of finding your
+                  perfect pet easier and more efficient. With advanced facial
+                  recognition technology, you can quickly find the right pet for you
+                  and match it with potential adopters.
+                </p>
+              </div>
+            </div>
+            </div>
+            <div class="smallbgimage d-block d-md-none"><div class="smalloverlay "></div>
+            <div class="landingpagetext d-flex flex-column justify-content-center align-items-center">
+                <h3 class="Mainheading">Welcome to</h3>
+                <h2 class="Subheading col-10">THE FUTURE OF ADOPTION</h2>
+                <p class="landingtext col-12 text-center">
+                  Our platform is designed to make the process of finding your
+                  perfect pet easier and more efficient. With advanced facial
+                  recognition technology, you can quickly find the right pet for you
+                  and match it with potential adopters.
+                </p>
+              </div></div>
+          
+          <div class="searchbar  d-none d-md-block mx-lg-3 ">
+            <ul class="nav nav-tabs " id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="dogs-tab"
+                  data-toggle="tab"
+                  data-target="#dogs"
+                  type="button"
+                  role="tab"
+                  aria-controls="dogs"
+                  aria-selected="true"
+                >
+                  <img src="./Images/Dogs.png" alt="" class="me-2" />Dogs
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="cats-tab"
+                  data-toggle="tab"
+                  data-target="#cats"
+                  type="button"
+                  role="tab"
+                  aria-controls="cats"
+                  aria-selected="false"
+                >
+                  <img src="./Images/Cats.png" alt="" class="me-2" />Cats
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="org-tab"
+                  data-toggle="tab"
+                  data-target="#org"
+                  type="button"
+                  role="tab"
+                  aria-controls="org"
+                  aria-selected="false"
+                >
+                  <img
+                    src="./Images/organization.png"
+                    alt=""
+                    class="me-2"
+                  />Organization
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="dogs"
+                role="tabpanel"
+                aria-labelledby="dogs-tab">
+                <div class="row m-0 p-0 pt-5 pb-2 px-2">
+                  <div class="col-12 col-md-6 col-lg-3  ">
+                    <div class="maindiv position-relative mb-3">
+                      <label for="location" class="loclabel">Location</label>
+                      <div class="inputdiv d-flex justify-content-between">
+                        <input
+                        class="col-10"
+                          type="text"
+                          name="location"
+                          placeholder="Warszawa, Poland"
+                        />
+                        <i class="bi bi-geo-alt col-2"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3 ">
+                    <div class="maindiv position-relative mb-3">
+                      <label for="location" class="breedlabel">Breeds</label>
+                      <div class="selectdiv">
+                        <select class="select" required="required">
+                          <option
+                            value=""
+                            disabled="disabled"
+                            selected="selected"
+                          >
+                            Any
+                          </option>
+                          <option value="#">One</option>
+                          <option value="#">Two</option>
+                          <option value="#">Three</option>
+                          <option value="#">Four</option>
+                          <option value="#">Five</option>
+                          <option value="#">Six</option>
+                          <option value="#">Seven</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3 ">
+                      <div class="maindiv position-relative mb-3">
+                          <label for="location" class="agelabel">Age</label>
+                          <div class="selectdiv">
+                            <select class="select" required="required">
+                              <option
+                                value=""
+                                disabled="disabled"
+                                selected="selected"
+                              >
+                                Any
+                              </option>
+                              <option value="#">One</option>
+                              <option value="#">Two</option>
+                              <option value="#">Three</option>
+                              <option value="#">Four</option>
+                              <option value="#">Five</option>
+                              <option value="#">Six</option>
+                              <option value="#">Seven</option>
+                            </select>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="d-none d-md-block col-md-6 col-lg-3 ">
+                      <div class="maindiv position-relative mb-3">
+                          <label for="location" class="sizelabel">Size</label>
+                          <div class="selectdiv">
+                            <select class="select" required="required">
+                              <option
+                                value=""
+                                disabled="disabled"
+                                selected="selected"
+                              >
+                                Any
+                              </option>
+                              <option value="#">One</option>
+                              <option value="#">Two</option>
+                              <option value="#">Three</option>
+                              <option value="#">Four</option>
+                              <option value="#">Five</option>
+                              <option value="#">Six</option>
+                              <option value="#">Seven</option>
+                            </select>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end align-items-center  px-3">
+                  <img src="./Images/filter.png" alt=""> 
+                  <div class="filter d-flex justify-content-center">
+                      <p class="primarytext pt-3 me-2">More</p>
+               
+                  <button class="searchbtn"><img src="./Images/Search.png" alt="">Search</button>
+                </div>
+              </div>
+          </div>
+              <div
+                class="tab-pane fade"
+                id="cats"
+                role="tabpanel"
+                aria-labelledby="cats-tab"
+              >
+              <div class="row m-0 p-0 pt-5 pb-2">
+                  <div class="col-3">
+                    <div class="maindiv position-relative mb-3">
+                      <label for="location" class="loclabel">Location</label>
+                      <div class="inputdiv d-flex justify-content-between">
+                        <input
+                          type="text"
+                          name="location"
+                          placeholder="Warszawa, Poland"
+                        />
+                        <i class="bi bi-geo-alt"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="maindiv position-relative mb-3">
+                      <label for="location" class="breedlabel">Breeds</label>
+                      <div class="selectdiv">
+                        <select class="select" required="required">
+                          <option
+                            value=""
+                            disabled="disabled"
+                            selected="selected"
+                          >
+                            Any
+                          </option>
+                          <option value="#">One</option>
+                          <option value="#">Two</option>
+                          <option value="#">Three</option>
+                          <option value="#">Four</option>
+                          <option value="#">Five</option>
+                          <option value="#">Six</option>
+                          <option value="#">Seven</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                      <div class="maindiv position-relative mb-3">
+                          <label for="location" class="agelabel">Age</label>
+                          <div class="selectdiv">
+                            <select class="select" required="required">
+                              <option
+                                value=""
+                                disabled="disabled"
+                                selected="selected"
+                              >
+                                Any
+                              </option>
+                              <option value="#">One</option>
+                              <option value="#">Two</option>
+                              <option value="#">Three</option>
+                              <option value="#">Four</option>
+                              <option value="#">Five</option>
+                              <option value="#">Six</option>
+                              <option value="#">Seven</option>
+                            </select>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-3">
+                      <div class="maindiv position-relative mb-3">
+                          <label for="location" class="sizelabel">Size</label>
+                          <div class="selectdiv">
+                            <select class="select" required="required">
+                              <option
+                                value=""
+                                disabled="disabled"
+                                selected="selected"
+                              >
+                                Any
+                              </option>
+                              <option value="#">One</option>
+                              <option value="#">Two</option>
+                              <option value="#">Three</option>
+                              <option value="#">Four</option>
+                              <option value="#">Five</option>
+                              <option value="#">Six</option>
+                              <option value="#">Seven</option>
+                            </select>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end align-items-center  px-3">
+                  <img src="./Images/filter.png" alt=""> 
+                  <div class="filter d-flex justify-content-center">
+                      <p class="primarytext pt-3 me-2">More</p>
+               
+                  <button class="searchbtn"><img src="./Images/Search.png" alt="">Search</button>
+                </div>
+              </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="org"
+                role="tabpanel"
+                aria-labelledby="org-tab"
+              >
+              <div class="row m-0 p-0 pt-5 pb-2">
+                  <div class="col-3">
+                    <div class="maindiv position-relative mb-3">
+                      <label for="location" class="loclabel">Location</label>
+                      <div class="inputdiv d-flex justify-content-between">
+                        <input
+                          type="text"
+                          name="location"
+                          placeholder="Warszawa, Poland"
+                        />
+                        <i class="bi bi-geo-alt"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="maindiv position-relative mb-3">
+                      <label for="location" class="breedlabel">Breeds</label>
+                      <div class="selectdiv">
+                        <select class="select" required="required">
+                          <option
+                            value=""
+                            disabled="disabled"
+                            selected="selected"
+                          >
+                            Any
+                          </option>
+                          <option value="#">One</option>
+                          <option value="#">Two</option>
+                          <option value="#">Three</option>
+                          <option value="#">Four</option>
+                          <option value="#">Five</option>
+                          <option value="#">Six</option>
+                          <option value="#">Seven</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                      <div class="maindiv position-relative mb-3">
+                          <label for="location" class="agelabel">Age</label>
+                          <div class="selectdiv">
+                            <select class="select" required="required">
+                              <option
+                                value=""
+                                disabled="disabled"
+                                selected="selected"
+                              >
+                                Any
+                              </option>
+                              <option value="#">One</option>
+                              <option value="#">Two</option>
+                              <option value="#">Three</option>
+                              <option value="#">Four</option>
+                              <option value="#">Five</option>
+                              <option value="#">Six</option>
+                              <option value="#">Seven</option>
+                            </select>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-3">
+                      <div class="maindiv position-relative mb-3">
+                          <label for="location" class="sizelabel">Size</label>
+                          <div class="selectdiv">
+                            <select class="select" required="required">
+                              <option
+                                value=""
+                                disabled="disabled"
+                                selected="selected"
+                              >
+                                Any
+                              </option>
+                              <option value="#">One</option>
+                              <option value="#">Two</option>
+                              <option value="#">Three</option>
+                              <option value="#">Four</option>
+                              <option value="#">Five</option>
+                              <option value="#">Six</option>
+                              <option value="#">Seven</option>
+                            </select>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end align-items-center  px-3">
+                  <img src="./Images/filter.png" alt=""> 
+                  <div class="filter d-flex justify-content-center">
+                      <p class="primarytext pt-3 me-2">More</p>
+               
+                  <button class="searchbtn"><img src="./Images/Search.png" alt="">Search</button>
+                </div>
+              </div>
+              </div>
+            
+          </div>
+        </div>
+        <div class=" smallsearchbar d-block d-md-none ">
+            <ul class="nav nav-tabs " id="myTab" role="tablist">
+              <li class="nav-item col-4" role="presentation">
+                <button
+                  class="nav-link active "
+                  id="dogs-tab"
+                  data-toggle="tab"
+                  data-target="#dogs"
+                  type="button"
+                  role="tab"
+                  aria-controls="dogs"
+                  aria-selected="true"
+                >
+                  <img src="./Images/Dogs.png" alt="" class="me-2" />Dogs
+                </button>
+              </li>
+              <li class="nav-item col-4" role="presentation">
+                <button
+                  class="nav-link "
+                  id="cats-tab"
+                  data-toggle="tab"
+                  data-target="#cats"
+                  type="button"
+                  role="tab"
+                  aria-controls="cats"
+                  aria-selected="false"
+                >
+                  <img src="./Images/Cats.png" alt="" class="me-2" />Cats
+                </button>
+              </li>
+              <li class="nav-item col-4" role="presentation">
+                <button
+                  class="nav-link "
+                  id="org-tab"
+                  data-toggle="tab"
+                  data-target="#org"
+                  type="button"
+                  role="tab"
+                  aria-controls="org"
+                  aria-selected="false"
+                >
+                  <img
+                    src="./Images/organization.png"
+                    alt=""
+                    class="me-2"
+                  />Organ...
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="dogs"
+                role="tabpanel"
+                aria-labelledby="dogs-tab">
+                <div class="row m-0 p-0 pt-5 pb-2 px-2">
+                  <div class="col-12 col-md-6 col-lg-3  ">
+                    <div class="maindiv position-relative mb-3">
+                      <label for="location" class="loclabel">Location</label>
+                      <div class="inputdiv d-flex justify-content-between">
+                        <input
+                        class="col-10"
+                          type="text"
+                          name="location"
+                          placeholder="Warszawa, Poland"
+                        />
+                        <i class="bi bi-geo-alt col-2"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3 ">
+                    <div class="maindiv position-relative mb-3">
+                      <label for="location" class="breedlabel">Breeds</label>
+                      <div class="selectdiv">
+                        <select class="select" required="required">
+                          <option
+                            value=""
+                            disabled="disabled"
+                            selected="selected"
+                          >
+                            Any
+                          </option>
+                          <option value="#">One</option>
+                          <option value="#">Two</option>
+                          <option value="#">Three</option>
+                          <option value="#">Four</option>
+                          <option value="#">Five</option>
+                          <option value="#">Six</option>
+                          <option value="#">Seven</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3 ">
+                      <div class="maindiv position-relative mb-3">
+                          <label for="location" class="agelabel">Age</label>
+                          <div class="selectdiv">
+                            <select class="select" required="required">
+                              <option
+                                value=""
+                                disabled="disabled"
+                                selected="selected"
+                              >
+                                Any
+                              </option>
+                              <option value="#">One</option>
+                              <option value="#">Two</option>
+                              <option value="#">Three</option>
+                              <option value="#">Four</option>
+                              <option value="#">Five</option>
+                              <option value="#">Six</option>
+                              <option value="#">Seven</option>
+                            </select>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="d-none d-md-block col-md-6 col-lg-3 ">
+                      <div class="maindiv position-relative mb-3">
+                          <label for="location" class="sizelabel">Size</label>
+                          <div class="selectdiv">
+                            <select class="select" required="required">
+                              <option
+                                value=""
+                                disabled="disabled"
+                                selected="selected"
+                              >
+                                Any
+                              </option>
+                              <option value="#">One</option>
+                              <option value="#">Two</option>
+                              <option value="#">Three</option>
+                              <option value="#">Four</option>
+                              <option value="#">Five</option>
+                              <option value="#">Six</option>
+                              <option value="#">Seven</option>
+                            </select>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end align-items-center  px-3">
+                  <img src="./Images/filter.png" alt=""> 
+                  <div class="filter d-flex justify-content-center">
+                      <p class="primarytext pt-3 me-2">More</p>
+               
+                  <button class="searchbtn"><img src="./Images/Search.png" alt="">Search</button>
+                </div>
+              </div>
+          </div>
+              <div
+                class="tab-pane fade"
+                id="cats"
+                role="tabpanel"
+                aria-labelledby="cats-tab"
+              >
+              <div class="row m-0 p-0 pt-5 pb-2">
+                  <div class="col-3">
+                    <div class="maindiv position-relative mb-3">
+                      <label for="location" class="loclabel">Location</label>
+                      <div class="inputdiv d-flex justify-content-between">
+                        <input
+                          type="text"
+                          name="location"
+                          placeholder="Warszawa, Poland"
+                        />
+                        <i class="bi bi-geo-alt"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="maindiv position-relative mb-3">
+                      <label for="location" class="breedlabel">Breeds</label>
+                      <div class="selectdiv">
+                        <select class="select" required="required">
+                          <option
+                            value=""
+                            disabled="disabled"
+                            selected="selected"
+                          >
+                            Any
+                          </option>
+                          <option value="#">One</option>
+                          <option value="#">Two</option>
+                          <option value="#">Three</option>
+                          <option value="#">Four</option>
+                          <option value="#">Five</option>
+                          <option value="#">Six</option>
+                          <option value="#">Seven</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                      <div class="maindiv position-relative mb-3">
+                          <label for="location" class="agelabel">Age</label>
+                          <div class="selectdiv">
+                            <select class="select" required="required">
+                              <option
+                                value=""
+                                disabled="disabled"
+                                selected="selected"
+                              >
+                                Any
+                              </option>
+                              <option value="#">One</option>
+                              <option value="#">Two</option>
+                              <option value="#">Three</option>
+                              <option value="#">Four</option>
+                              <option value="#">Five</option>
+                              <option value="#">Six</option>
+                              <option value="#">Seven</option>
+                            </select>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-3">
+                      <div class="maindiv position-relative mb-3">
+                          <label for="location" class="sizelabel">Size</label>
+                          <div class="selectdiv">
+                            <select class="select" required="required">
+                              <option
+                                value=""
+                                disabled="disabled"
+                                selected="selected"
+                              >
+                                Any
+                              </option>
+                              <option value="#">One</option>
+                              <option value="#">Two</option>
+                              <option value="#">Three</option>
+                              <option value="#">Four</option>
+                              <option value="#">Five</option>
+                              <option value="#">Six</option>
+                              <option value="#">Seven</option>
+                            </select>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end align-items-center  px-3">
+                  <img src="./Images/filter.png" alt=""> 
+                  <div class="filter d-flex justify-content-center">
+                      <p class="primarytext pt-3 me-2">More</p>
+               
+                  <button class="searchbtn"><img src="./Images/Search.png" alt="">Search</button>
+                </div>
+              </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="org"
+                role="tabpanel"
+                aria-labelledby="org-tab"
+              >
+              <div class="row m-0 p-0 pt-5 pb-2">
+                  <div class="col-3">
+                    <div class="maindiv position-relative mb-3">
+                      <label for="location" class="loclabel">Location</label>
+                      <div class="inputdiv d-flex justify-content-between">
+                        <input
+                          type="text"
+                          name="location"
+                          placeholder="Warszawa, Poland"
+                        />
+                        <i class="bi bi-geo-alt"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="maindiv position-relative mb-3">
+                      <label for="location" class="breedlabel">Breeds</label>
+                      <div class="selectdiv">
+                        <select class="select" required="required">
+                          <option
+                            value=""
+                            disabled="disabled"
+                            selected="selected"
+                          >
+                            Any
+                          </option>
+                          <option value="#">One</option>
+                          <option value="#">Two</option>
+                          <option value="#">Three</option>
+                          <option value="#">Four</option>
+                          <option value="#">Five</option>
+                          <option value="#">Six</option>
+                          <option value="#">Seven</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                      <div class="maindiv position-relative mb-3">
+                          <label for="location" class="agelabel">Age</label>
+                          <div class="selectdiv">
+                            <select class="select" required="required">
+                              <option
+                                value=""
+                                disabled="disabled"
+                                selected="selected"
+                              >
+                                Any
+                              </option>
+                              <option value="#">One</option>
+                              <option value="#">Two</option>
+                              <option value="#">Three</option>
+                              <option value="#">Four</option>
+                              <option value="#">Five</option>
+                              <option value="#">Six</option>
+                              <option value="#">Seven</option>
+                            </select>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-3">
+                      <div class="maindiv position-relative mb-3">
+                          <label for="location" class="sizelabel">Size</label>
+                          <div class="selectdiv">
+                            <select class="select" required="required">
+                              <option
+                                value=""
+                                disabled="disabled"
+                                selected="selected"
+                              >
+                                Any
+                              </option>
+                              <option value="#">One</option>
+                              <option value="#">Two</option>
+                              <option value="#">Three</option>
+                              <option value="#">Four</option>
+                              <option value="#">Five</option>
+                              <option value="#">Six</option>
+                              <option value="#">Seven</option>
+                            </select>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end align-items-center  px-3">
+                  <img src="./Images/filter.png" alt=""> 
+                  <div class="filter d-flex justify-content-center">
+                      <p class="primarytext pt-3 me-2">More</p>
+               
+                  <button class="searchbtn"><img src="./Images/Search.png" alt="">Search</button>
+                </div>
+              </div>
+              </div>
+            
+          </div>
+        </div>
+        </div>
+        
+
+    </div>
+      <!-- New Pets Cards Section -->
+      <div class="cardsect " >
+        <div class="px-lg-5 px-2 mx-lg-5">
+        <div class="d-flex flex-column flex-md-row justify-content-between my-5  ">
+            <div class="col-12 col-md-10 ">
+                <h3 class="Cardmainheading col-12 px-1">Recently Upload Pets For Adoption</h3>
+                <p class="subtext">Find Your Next Furry Companion Today Among Recently Uploaded Adoptable Pets</p>
+            </div>
+            <button class="seemorebtn  mx-3 mx-md-0">See More</button>
+        </div>
+       
+            
+            <div class="row m-0 p-0 gy-4">
+              <div class="col-md-4 col-12">
+            <div class="card col-12 p-0 m-0" style="padding:22px">
+                   <img class="card-img" style="padding: 22px;" src="./Images/NewPets (1).png" alt="">
+                   <div class="card-body m-0">
+                    <h3 class="card-title">Jackie</h3>
+                    <p class="card-text">Cursus malesuada maecenas magna et eget. Lobortis tellus aliquet posuere amet dignissim nulla ultrices. Aliquam commodo ultricies aliquam sit egestas justo pulvinar lacus.</p>
+                    <h3 class="card-Subtitle">German Shepherd</h3>
+                    <p class="card-Subtext">Female-Young</p>
+                    <div class="d-flex flex-row gap-2 ">
+                     <div> <img src="./Images//Petro.jpg" alt=""></div>
+                      <p class="card-Subtext pt-1">Petro</p>
+                    </div>
+                    <div class="d-flex justify-content-end seeDetails">
+                        <a href="">See Details</a>
+                      </div>
+                    </div>
+                    <div class="secondcarddiv"></div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+            <div class="card col-12 p-0  " style="padding:22px">
+                   <img class="card-img" style="padding: 22px;" src="./Images/NewPets (2).png" alt="">
+                   <div class="card-body">
+                    <h3 class="card-title">Chris</h3>
+                    <p class="card-text">Cursus malesuada maecenas magna et eget. Lobortis tellus aliquet posuere amet dignissim nulla ultrices. Aliquam commodo ultricies aliquam sit egestas justo pulvinar lacus.</p>
+                    <h3 class="card-Subtitle">German Shepherd</h3>
+                    <p class="card-Subtext">Female-Young</p>
+                    <div class="d-flex flex-row gap-2 ">
+                     <div> <img src="./Images//Petro.jpg" alt=""></div>
+                      <p class="card-Subtext pt-1">Petro</p>
+                    </div>
+                    <div class="d-flex justify-content-end seeDetails">
+                        <a href="">See Details</a>
+                      </div>
+                    </div>
+                    <div class="secondcarddiv"></div>
+                </div>
+              </div>
+              <div class="col-md-4 col-12">
+            <div class="card col-12 mb-4 p-0 " style="padding:22px">
+                   <img class="card-img" style="padding: 22px;" src="./Images/NewPets (3).png" alt="">
+                   <div class="card-body">
+                    <h3 class="card-title">Manilla</h3>
+                    <p class="card-text">Cursus malesuada maecenas magna et eget. Lobortis tellus aliquet posuere amet dignissim nulla ultrices. Aliquam commodo ultricies aliquam sit egestas justo pulvinar lacus.</p>
+                    <h3 class="card-Subtitle">German Shepherd</h3>
+                    <p class="card-Subtext">Female-Young</p>
+                    <div class="d-flex flex-row gap-2 ">
+                     <div> <img src="./Images//Petro.jpg" alt=""></div>
+                      <p class="card-Subtext pt-1">Petro</p>
+                    </div>
+                    <div class="d-flex justify-content-end seeDetails">
+                        <a href="">See Details</a>
+                      </div>
+                    </div>
+                    <div class="secondcarddiv"></div>
+                </div>
+              </div>
+             
+            
+          </div>
+            
+          </div>
+      </div>
+    
+      <!-- Lost Pets Cards Section -->
+      <div class="cardsect " >
+        <div class="px-lg-5 px-2 mx-lg-5">
+        <div class="d-flex flex-column flex-md-row justify-content-between my-5  ">
+            <div class="col-12 col-md-10 ">
+                <h3 class="Cardmainheading col-12 px-1">Lost Pets</h3>
+                <p class="subtext">Find Your Next Furry Companion Today Among Recently Uploaded Adoptable Pets</p>
+            </div>
+            <button class="seemorebtn  mx-3 mx-md-0">See More</button>
+        </div>
+       
+            
+            <div class="row m-0 p-0 gy-4">
+              <div class="col-md-4 col-12">
+            <div class="card col-12 p-0 m-0" style="padding:22px">
+                   <img class="card-img" style="padding: 22px;" src="./Images/LostPet(1).png" alt="">
+                   <div class="card-body m-0">
+                    <h3 class="card-title">Jackie</h3>
+                    <p class="card-text">Cursus malesuada maecenas magna et eget. Lobortis tellus aliquet posuere amet dignissim nulla ultrices. Aliquam commodo ultricies aliquam sit egestas justo pulvinar lacus.</p>
+                    <h3 class="card-Subtitle">German Shepherd</h3>
+                    <p class="card-Subtext">Female-Young</p>
+                    <p class="lostcard-Subtext ">Date Lost : 2 / 2 / 2023</p>
+                    <div class="d-flex justify-content-end seeDetails">
+                        <a href="">See Details</a>
+                      </div>
+                    </div>
+                    <div class="secondcarddiv"></div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+            <div class="card col-12 p-0  " style="padding:22px">
+                   <img class="card-img" style="padding: 22px;" src="./Images/LostPet(2).png" alt="">
+                   <div class="card-body">
+                    <h3 class="card-title">Chris</h3>
+                    <p class="card-text">Cursus malesuada maecenas magna et eget. Lobortis tellus aliquet posuere amet dignissim nulla ultrices. Aliquam commodo ultricies aliquam sit egestas justo pulvinar lacus.</p>
+                    <h3 class="card-Subtitle">German Shepherd</h3>
+                    <p class="card-Subtext">Female-Young</p>
+                    <p class="lostcard-Subtext ">Date Lost : 2 / 2 / 2023</p>
+                    <div class="d-flex justify-content-end seeDetails">
+                        <a href="">See Details</a>
+                      </div>
+                    </div>
+                    <div class="secondcarddiv"></div>
+                </div>
+              </div>
+              <div class="col-md-4 col-12">
+            <div class="card col-12 mb-4 p-0 " style="padding:22px">
+                   <img class="card-img" style="padding: 22px;" src="./Images/LostPet(3).png" alt="">
+                   <div class="card-body">
+                    <h3 class="card-title">Manilla</h3>
+                    <p class="card-text">Cursus malesuada maecenas magna et eget. Lobortis tellus aliquet posuere amet dignissim nulla ultrices. Aliquam commodo ultricies aliquam sit egestas justo pulvinar lacus.</p>
+                    <h3 class="card-Subtitle">German Shepherd</h3>
+                    <p class="card-Subtext">Female-Young</p>
+                    <p class="lostcard-Subtext ">Date Lost : 2 / 2 / 2023</p>
+                    <div class="d-flex justify-content-end seeDetails">
+                        <a href="">See Details</a>
+                      </div>
+                    </div>
+                    <div class="secondcarddiv"></div>
+                </div>
+              </div>
+             
+            
+          </div>
+            
+          </div>
+      </div>
+      
+    <!-- video section -->
+    <div class=" py-3 px-lg-5 mx-lg-3">
+        <div class=" row d-flex justify-content-around m-0 p-0 px-4">
+            <div class="col-12 col-md-6  videocarddiv col-xl-6 m-0 ">
+              <div>
+                    <img src="./Images/BannerImage.png" class="card-img-top videocard" alt="..."></div>
+                  <div class="videosecondcarddiv d-none d-md-flex"></div>
+                  <div class="smallvideosecondcarddiv d-block d-md-none"></div>
+            </div>
+                
+           
+            <div class="col-12 col-md-6 py-3 col-xl-6 d-flex justify-content-center align-items-center ">
+                <div class="col-12 ">
+                <h3 class="videosectheading ">Helping Reunite Lost and Found Pets with Their Owners with AI Technology</h3>
+                <ul class="videosecttext px-3" >
+                    <li>Lost and found pet posting: Post information about lost or found pets and search for matching reports
+                    </li>
+                    <li>Facial recognition for pets: Match your pet with potential adopters using cutting-edge technology</li>
+                    <li> Face recognition login: Log in securely and conveniently with face recognition technology</li>
+                </ul>
+                <button class="videoseemorebtn">See More</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Found Pets Cards Section -->
+    <div class="cardsect " >
+      <div class="px-lg-5 px-2 mx-lg-5">
+      <div class="d-flex flex-column flex-md-row justify-content-between my-5  ">
+          <div class="col-12 col-md-10 ">
+              <h3 class="Cardmainheading col-12 px-1">Found Pets</h3>
+              <p class="subtext">Help them find their home</p>
+          </div>
+          <button class="seemorebtn  mx-3 mx-md-0">See More</button>
+      </div>
+     
+          
+          <div class="row m-0 p-0 gy-4">
+            <div class="col-md-4 col-12">
+          <div class="card col-12 p-0 m-0" style="padding:22px">
+                 <img class="card-img" style="padding: 22px;" src="./Images/FoundPet(1).png" alt="">
+                 <div class="card-body m-0">
+                  <h3 class="card-title">Walhi</h3>
+                  <p class="card-text">Cursus malesuada maecenas magna et eget. Lobortis tellus aliquet posuere amet dignissim nulla ultrices. Aliquam commodo ultricies aliquam sit egestas justo pulvinar lacus.</p>
+                  <h3 class="card-Subtitle">German Shepherd</h3>
+                  <p class="card-Subtext">Female-Young</p>
+                  <p class="lostcard-Subtext ">Date Found : 2 / 2 / 2023</p>
+                  <div class="d-flex justify-content-end seeDetails">
+                      <a href="">See Details</a>
+                    </div>
+                  </div>
+                  <div class="secondcarddiv"></div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+          <div class="card col-12 p-0  " style="padding:22px">
+                 <img class="card-img" style="padding: 22px;" src="./Images/FoundPet(2).png" alt="">
+                 <div class="card-body">
+                  <h3 class="card-title">Chritiwa</h3>
+                  <p class="card-text">Cursus malesuada maecenas magna et eget. Lobortis tellus aliquet posuere amet dignissim nulla ultrices. Aliquam commodo ultricies aliquam sit egestas justo pulvinar lacus.</p>
+                  <h3 class="card-Subtitle">Bulldog</h3>
+                  <p class="card-Subtext">Female-Young</p>
+                  <p class="lostcard-Subtext ">Date Found : 2 / 2 / 2023</p>
+                  <div class="d-flex justify-content-end seeDetails">
+                      <a href="">See Details</a>
+                    </div>
+                  </div>
+                  <div class="secondcarddiv"></div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+          <div class="card col-12 mb-4 p-0 " style="padding:22px">
+                 <img class="card-img" style="padding: 22px;" src="./Images/FoundPet(3).png" alt="">
+                 <div class="card-body">
+                  <h3 class="card-title">Lambada</h3>
+                  <p class="card-text">Cursus malesuada maecenas magna et eget. Lobortis tellus aliquet posuere amet dignissim nulla ultrices. Aliquam commodo ultricies aliquam sit egestas justo pulvinar lacus.</p>
+                  <h3 class="card-Subtitle">Shiba Inu</h3>
+                  <p class="card-Subtext">Female-Young</p>
+                  <p class="lostcard-Subtext ">Date Found : 2 / 2 / 2023</p>
+                  <div class="d-flex justify-content-end seeDetails">
+                      <a href="">See Details</a>
+                    </div>
+                  </div>
+                  <div class="secondcarddiv"></div>
+              </div>
+            </div>
+           
+          
+        </div>
+          
+        </div>
+    </div>
+ 
+      <!-- Breed section -->
+    <div class="cardsect px-lg-5 pb-5 ">
+        <div class="d-flex justify-content-between mt-5 mb-3 mx-3 px-4">
+            <div class="">
+                <h3 class="Cardmainheading">Breeds</h3>
+                <p class="subtext">Find Pets by Breeds</p>
+                <div class="d-flex m-0 p-0">
+                    <button
+                    class="navbtn active"
+                  >
+                    <img src="./Images/Dogs.png" alt="" class="me-2" />Dogs
+                  </button>
+                  <hr class="vr" style="height: 20px; width:2px;"></hr>
+                  <button
+                  class="navbtn"
+                  type="button"
+                >
+                  <img src="./Images/lightcat.png" alt="" class="me-2" />Cats
+                </button>
+                </div>
+            </div>
+            <button class="seemorebtn">See More</button>
+        </div>
+        <div class="d-flex row m-0 p-0 gy-3">
+            <div class="col-md-6 col-lg-4 col-12 ">
+                <div class="d-flex row   m-0 breedcard px-0">
+                    <img src="./Images/Breed(1).png" alt="" class="col-4 ">
+                    <div class="col-8 d-flex flex-column justify-content-center ">
+                        <h4 class="Breedmainheading">Affenpinscher</h4>
+                        <p class="BreedSubheading">Adorable . Playful . Independent</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-12">
+                <div class="d-flex  breedcard px-0">
+                    <img src="./Images/Breed(2).png" alt="" class="col-4 ">
+                    <div class="col-8 d-flex flex-column justify-content-center ">
+                        <h4 class="Breedmainheading">Afghan Hound</h4>
+                        <p class="BreedSubheading">Elegant . Grateful . Majestic</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-12">
+                <div class="d-flex  breedcard px-0">
+                    <img src="./Images/Breed(3).png" alt="" class="col-4">
+                    <div class="col-8 d-flex flex-column justify-content-center ">
+                        <h4 class="Breedmainheading">Airedale Terrier</h4>
+                        <p class="BreedSubheading">Brave . Loyal . Energetic</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 ">
+              <div class="d-flex  breedcard px-0">
+                  <img src="./Images/Breed(4).png" alt="" class="col-4 ">
+                  <div class="col-8 d-flex flex-column justify-content-center pe-0">
+                      <h4 class="Breedmainheading">Akita</h4>
+                      <p class="BreedSubheading">Powerful . Protective . Unique</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+              <div class="d-flex  breedcard px-0">
+                  <img src="./Images/Breed(5).png" alt="" class="col-4 ">
+                  <div class="col-8 d-flex flex-column justify-content-center pe-0">
+                      <h4 class="Breedmainheading">Alaskan Klee Kai</h4>
+                      <p class="BreedSubheading">Intelligent . Energetic . Unique</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+              <div class="d-flex  breedcard px-0">
+                  <img src="./Images/Breed(6).png" alt="" class="col-4 ">
+                  <div class="col-8 d-flex flex-column justify-content-center pe-0">
+                      <h4 class="Breedmainheading">Alaskan Malamute</h4>
+                      <p class="BreedSubheading">Playful . Affectionate . Magestic</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 ">
+            <div class="d-flex  breedcard px-0">
+                <img src="./Images/Breed(7).png" alt="" class="col-4 ">
+                <div class="col-8 d-flex flex-column justify-content-center pe-0">
+                    <h4 class="Breedmainheading">American Bulldog</h4>
+                    <p class="BreedSubheading">Fearless . Fearless . Strong</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="d-flex  breedcard px-0">
+                <img src="./Images/Breed(8).png" alt="" class="col-4 ">
+                <div class="col-8 d-flex flex-column justify-content-center ">
+                    <h4 class="Breedmainheading">American Eskimo Dog</h4>
+                    <p class="BreedSubheading">Friendly . Alert . Playful</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="d-flex  breedcard px-0">
+                <img src="./Images/Breed(9).png" alt="" class="col-4 ">
+                <div class="col-8 d-flex flex-column justify-content-center ">
+                    <h4 class="Breedmainheading">American Leopard Hound</h4>
+                    <p class="BreedSubheading">Sleek . Sporty . Unique</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        
+
+    </div>
+<!-- Trusted Pet Section -->
+    <div class="trustedpetsect px-lg-5  mb-lg-5  ">
+        <div class="d-flex flex-column flex-md-row justify-content-between my-5 mx-lg-3 px-lg-4 px-3">
+            <div class="px-1">
+                <h3 class="Cardmainheading">Trusted Pet Adoption Organizations</h3>
+                <p class="subtext">Find Your Furry Friend at These Reliable and Caring Shelters and Rescues</p>
+                </div>
+                <button class="seemorebtn">See More</button>
+                </div>
+                <div class="d-flex row m-0 p-0 gy-4">
+                    <div class="col-12 col-lg-6 p-3">
+                        <div class="trustedcard p-2">
+                            <h3 class="trustedmainheading col-12 col-md-6 ">Pet Care Organizations</h3>
+                            <p class="trustedcardtext mb-3 col-12 px-2 ">Adopt a furry companion from one of these trusted organizations. These shelters and rescues are dedicated to finding loving homes for pets in need. With a variety of breeds and species to choose from, you're sure to find the perfect pet. Each organization offers a safe and caring environment for the animals in their care. Start your pet adoption journey today and give a deserving animal a second chance at a happy life.</p>
+                            <button class="Seebtn mt-5 mb-3">See All Organizations</button>
+                        </div>
+                    </div>
+                    <div class=" p-0 petimagesect col-12  col-lg-6">
+                        <div class="d-flex justify-content-between row m-0 p-0 gy-3">
+                                <img src="./Images/PetCare(1).png" alt="" class="col-12 col-md-6 ">            
+                                <img src="./Images/PetCare(2).png" alt="" class="col-md-6 col-12 ">
+                        </div>
+                        <div class="d-flex justify-content-between my-3 row m-0 p-0 gy-3">
+                            <img src="./Images/PetCare(3).png" alt="" class="col-md-6 col-12">            
+                            <img src="./Images/PetCare(4).png" alt="" class="col-md-6 col-12 ">
+                    </div>
+                    </div>
+                </div>
+    </div>
+    <div class="freediv"></div>
+    <!-- Footer Section -->
+    <section class="footersection mt-5">
+        <footer style="background:  #66ADB6; position: relative;" >
+          <div class="px-3 subscribesect mx-lg-5">
+            <div class="d-flex newslettercard row m-0 ">
+              <div class="col-12 col-lg-8 col-md-6 order-1 order-lg-1"> 
+                          <h3 class="newsCardmainheading col-lg-4 p-0">Subscribe NewsLetter</h3>
+                          <p class="subtext">Join the Community</p>
+                          <p class="subtext">Subscribe to Our Newsletter Now for Exclusive Adoption Updates and Pet Care Tips!</p>
+                             
+                          <div class="d-flex justify-content-between col-12 col-md-8 row m-0 p-0">
+                              <input type="email" placeholder="Your email address" class='col-12 col-md-8' style="background: #FFFFFF;
+                              border-radius: 4px;
+                              padding: 5px; border: 1px solid #FFFFFF ;">
+                              <button class="subscribebtn col-8 my-2">Subscribe</button>
+                          </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 order-1 order-lg-1">
+              <img src="./Images/mailbox.png" alt="" class="col-lg-10 col-md-10">
+            </div>
+          </div>
+        </div>
+            <div class="footerbg  ">
+                <div class="d-lg-flex row m-0 p-0">
+                    <div class="col-lg-3 col-md-6  col-4 mb-4 p-0 d-flex justify-content-center mt-5">
+                        <p class="logotext  d-flex">
+                          L
+                          <img
+                            src="./Images/Logo.jpg"
+                            alt="Logo"
+                            class="logo mt-1 mx-1 "
+                          />GO
+                        </p>  
+                </div>
+                <div class="row m-0 p-0 col-lg-8">
+                    <div class="col-lg-2 col-md-6 col-8 mb-4 " style="letter-spacing: 3px;">
+                      <h5 class="mb-3 fhead pt-lg-5">Our Destinations</h5>
+                      <ul class="list-unstyled  linksds mb-0">
+                        <li class="mb-1 pb-2">
+                          <a href="#!">Canada</a>
+                        </li>
+                        <li class="mb-1 pb-2">
+                          <a href="#!">Alaska</a>
+                        </li>
+                        <li class="mb-1 pb-2">
+                          <a href="#!">France</a>
+                        </li>
+                        </li>
+                        <li class="mb-1 pb-2">
+                          <a href="#!">Iceland</a>
+                        </li>
+        
+                      </ul>
+                    </div>
+        
+                    <div class="col-lg-3 col-md-6 mb-4 " style="letter-spacing: 3px;">
+                      <h5 class="mb-3 fhead pt-5">Our Activities</h5>
+                      <ul class="list-unstyled  linksds mb-0">
+                        <li class="mb-1 pb-2">
+                          <a href="#!">Northen Lights</a>
+                        </li>
+                        <li class="mb-1 pb-2">
+                          <a href="#!">Crusing & Sailing</a>
+                        </li>
+                        <li class="mb-1 pb-2">
+                          <a href="#!">Multi Activities</a>
+                        </li>
+                        <li class="mb-1 pb-2">
+                          <a href="#!">Kayaing</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 " style="letter-spacing: 3px;">
+                      <h5 class="mb-3 fhead pt-5">Travel Blogs</h5>
+                      <ul class="list-unstyled linksds mb-0">
+                        <li class="mb-1 pb-2">
+                          <a href="#!">Bali Travel Guide</a>
+                        </li>
+                        <li class="mb-1 pb-2">
+                          <a href="#!">Srilanka Travel Guide</a>
+                        </li>
+                        <li class="mb-1 pb-2">
+                          <a href="#!">Peru Travel Guide</a>
+                        </li>
+                        <li class="mb-1 pb-2">
+                          <a href="#!">Bali Travel Guide</a>
+                        </li>
+        
+                      </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4 " style="letter-spacing: 3px;">
+                      <h5 class="mb-3 fhead pt-5">About Us</h5>
+                      <ul class="list-unstyled linksds mb-0">
+                        <li class="mb-1 pb-2">
+                          <a href="#!">Our Story</a>
+                        </li>
+                        <li class="mb-1 pb-2">
+                          <a href="#!">Work with Us</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4" style="letter-spacing: 3px;">
+                      <h5 class="mb-3 fhead pt-5">Contact us</h5>
+                      <ul class="list-unstyled linksds mb-0">
+                        <li class="mb-1 pb-2">
+                          <a href="#!">Our Story</a>
+                        </li>
+                        <li class="mb-1 pb-2">
+                          <a href="#!">Work with Us</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              
+            </div>
+          </footer>
+    </section>
+    <div class="copyright " style="background-color: #265C62;">
+        <p class="copyrighttext">Copyright © 2023 All Rights Reserved. In association with IamThehackerman.com</p>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Bootstrap JS CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
